@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+
+
+* {
+   	margin: 0; 
+    padding:0;
+   	color: #000000; 
+    box-sizing:border-box;
+   }
+
+ body {
+   	background: #e4ddce;
+   	min-height: 100vh;
+   	align-items: left;
+   	font-family: 'EB Garamond', serif;
+   	font-size: 40px;
+   }
+
+   .container {
+    margin:50px auto;
+    max-width:1200px;     
+   }     
+/*Ali added container*/
+
+   h1 { 
+    font-weight:400; 
+    letter-spacing:0.1em;
+    font-size:1.5em;
+    text-align:center;
+  }
+
+   h2 { 
+    font-weight:400; 
+    font-size:.5em;
+    text-align:center;
+  }
+
+.boxtest {
+    font-weight: 200;
+    text-decoration: none;
+    background: linear-gradient(to right, #e4ddce 50%, #000000 50%, #950);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 3s ease-out;
+}
+/*following classes added by Ali*/
+.big {
+  font-size:50px;
+}
+.boxtest.hoveredOn {
+    background-position: -100%; 
+}
+
+/*attempt to make 3rd class that will fade-out the text instead of reversing hoveredOn, color red is for testing purposes*/
+.boxtest.hoveredOn.fade {
+    -webkit-text-fill-color: red !important;
+}
+
+
+
+
